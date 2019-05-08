@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RequestMapping("/")
 public class DemoController {
 
-	@RequestMapping("/index")
+	@RequestMapping({"/index", "/"})
 	public String index() {
 		return "index";
 	}
